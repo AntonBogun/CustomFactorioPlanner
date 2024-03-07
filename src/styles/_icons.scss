@@ -1,0 +1,150 @@
+.lab-icon {
+  position: relative;
+  flex-shrink: 0;
+
+  display: inline-block;
+
+  margin: 1px;
+  width: 32px;
+  height: 32px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: scale(0.5);
+    transform-origin: 0 0;
+
+    width: 64px;
+    height: 64px;
+  }
+
+  > span,
+  &::after {
+    // Styles for text overlay
+    position: absolute;
+
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+
+    white-space: nowrap;
+    text-shadow:
+      0px 2px 2px black,
+      0px -2px 2px black,
+      2px 0px 2px black,
+      -2px 0px 2px black;
+    pointer-events: none;
+  }
+
+  /**
+   * E.G. Amount of item in recipe, id of machines objective.
+   * Display in lower right.
+   */
+  > span {
+    bottom: -3px;
+    right: -2px;
+  }
+
+  /** E.G. Temperature of fluid. Display in upper right. */
+  &::after {
+    top: -7px;
+    right: -6px;
+  }
+
+  &.lg {
+    width: 64px;
+    height: 64px;
+
+    &::before {
+      transform: none;
+    }
+  }
+
+  &.sm {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+
+    &::before {
+      top: -6px;
+      left: -6px;
+    }
+
+    &.padded {
+      margin: 7px;
+    }
+
+    + .p-button-label {
+      margin-left: 0.75rem;
+    }
+  }
+}
+
+/** Set up base app related icons sprite sheet */
+.lab-icon {
+  &::before {
+    background-image: url('../assets/icons/icons.webp');
+  }
+}
+
+.dyson-sphere-program::before {
+  background-position: -66px -1px;
+}
+
+.factorio::before {
+  background-position: -131px -1px;
+}
+
+.fast-inserter::before {
+  background-position: -196px -1px;
+}
+
+.inserter::before {
+  background-position: -1px -66px;
+}
+
+.long-handed-inserter::before {
+  background-position: -66px -66px;
+}
+
+.module::before {
+  background-position: -131px -66px;
+}
+
+body.light .module::before {
+  filter: invert(1);
+}
+
+.pipe::before {
+  background-position: -196px -66px;
+}
+
+.satisfactory::before {
+  background-position: -1px -131px;
+}
+
+.stack-inserter::before {
+  background-position: -66px -131px;
+}
+
+.time::before {
+  background-position: -131px -131px;
+}
+
+.captain-of-industry::before {
+  background-position: -196px -131px;
+}
+
+.techtonica::before {
+  background-position: -1px -196px;
+}
+
+.final-factory::before {
+  background-position: -66px -196px;
+}

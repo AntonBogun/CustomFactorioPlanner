@@ -1,0 +1,33 @@
+// Vendor & overrides
+@import 'styles/bootstrap';
+@import 'styles/theme-overrides';
+@import 'styles/vis-network';
+// Local
+@import 'styles/typography';
+@import 'styles/icons';
+@import 'styles/buttons';
+@import 'styles/spinner';
+@import 'styles/table';
+@import 'styles/utils';
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  line-height: 20px;
+
+  background-color: var(--surface-ground);
+
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
