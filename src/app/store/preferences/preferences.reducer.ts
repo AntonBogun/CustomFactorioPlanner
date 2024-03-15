@@ -39,6 +39,7 @@ export const initialPreferencesState: PreferencesState = {
   states: {
     [Game.Factorio]: {},
     [Game.DysonSphereProgram]: {},
+    [Game.Custom]: {},
     [Game.Satisfactory]: {},
     [Game.CaptainOfIndustry]: {},
     [Game.Techtonica]: {},

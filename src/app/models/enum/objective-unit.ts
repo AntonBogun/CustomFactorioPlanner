@@ -21,7 +21,8 @@ export function objectiveUnitOptions(
     { value: ObjectiveUnit.Machines, label: 'options.objectiveUnit.machines' },
   ];
 
-  if (game === Game.DysonSphereProgram || game === Game.CaptainOfIndustry) {
+  // if (game === Game.DysonSphereProgram || game === Game.CaptainOfIndustry) {
+  if (game === Game.DysonSphereProgram || game === Game.CaptainOfIndustry || game === Game.Custom) {
     return result.filter((i) => i.value !== ObjectiveUnit.Wagons);
   }
 

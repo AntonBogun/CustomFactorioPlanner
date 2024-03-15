@@ -21,7 +21,8 @@ export function linkValueOptions(game: Game): SelectItem<LinkValue>[] {
     { label: 'Machines', value: LinkValue.Machines },
   ];
 
-  if (game === Game.DysonSphereProgram || game === Game.CaptainOfIndustry) {
+  // if (game === Game.DysonSphereProgram || game === Game.CaptainOfIndustry) {
+  if (game === Game.DysonSphereProgram || game === Game.CaptainOfIndustry || game === Game.Custom) {
     return result.filter((i) => i.value !== LinkValue.Wagons);
   }
 

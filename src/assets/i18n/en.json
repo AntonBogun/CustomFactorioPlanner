@@ -39,6 +39,7 @@
     "game": {
       "factorio": "Factorio",
       "dysonSphereProgram": "Dyson Sphere Program",
+      "custom": "Custom",
       "satisfactory": "Satisfactory",
       "captainOfIndustry": "Captain of Industry",
       "techtonica": "Techtonica",

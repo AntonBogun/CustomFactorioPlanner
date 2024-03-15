@@ -42,7 +42,7 @@ export const data: AppData = {
     { id: 'wt2', name: 'Warptorio2', game: Game.Factorio },
     { id: 'xan', name: 'Xander Mod', game: Game.Factorio },
     { id: 'dsp', name: 'Dyson Sphere Program', game: Game.DysonSphereProgram },
-    // { id: 'custom', name: 'Custom', game: Game.Custom },
+    { id: 'custom', name: 'Custom', game: Game.Custom },
     { id: 'sfy', name: 'Satisfactory', game: Game.Satisfactory },
     { id: 'coi', name: 'Captain of Industry', game: Game.CaptainOfIndustry },
     { id: 'tta', name: 'Techtonica', game: Game.Techtonica },

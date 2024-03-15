@@ -29,14 +29,14 @@ export const gameInfo: Record<Game, GameInfo> = {
     modId: 'dsp',
     hideColumns: ['beacons', 'pollution', 'wagons'],
   },
-  // [Game.Custom]: {
-  //   icon: 'dyson-sphere-program',
-  //   route: 'custom',
-  //   label: 'options.game.dysonSphereProgram',
-  //   meta: 'Dyson Sphere Program',
-  //   modId: 'custom',
-  //   hideColumns: ['beacons', 'pollution', 'wagons'],
-  // },
+  [Game.Custom]: {
+    icon: 'dyson-sphere-program',
+    route: 'custom',
+    label: 'options.game.custom',
+    meta: 'Custom',
+    modId: 'custom',
+    hideColumns: ['beacons', 'pollution', 'wagons'],
+  },
   [Game.Satisfactory]: {
     icon: 'satisfactory',
     route: 'satisfactory',

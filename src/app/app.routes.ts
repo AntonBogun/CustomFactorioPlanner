@@ -34,10 +34,10 @@ export const routes: Routes = [
     path: 'dsp',
     redirectTo: '/?s=dsp&v=9',
   },
-  // {
-  //   path: "custom",
-  //   redirectTo: "/?s=custom&v=9",
-  // },
+  {
+    path: "custom",
+    redirectTo: "/?s=custom&v=9",
+  },
   {
     path: 'satisfactory',
     redirectTo: '/?s=sfy&v=9',
